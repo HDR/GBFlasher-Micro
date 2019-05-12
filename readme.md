@@ -1,7 +1,7 @@
 # The worlds smallest Game Boy cart flasher!
 A clone [J.Rodrigo's flasher](https://www.tindie.com/products/JRodrigo/cart-flasher-for-gameboy/)
 
-[Purchase on OSHPARK](https://oshpark.com/shared_projects/pWrIHS3I)
+[Purchase on OSHPARK](https://oshpark.com/shared_projects/ebaDN5Ku)
 
 
 ## Images
@@ -21,8 +21,8 @@ A clone [J.Rodrigo's flasher](https://www.tindie.com/products/JRodrigo/cart-flas
 | C4 | 0603ZD104KAT2A | 0.1uF |
 | C5 | C0603C220J5RACTU | 22pF |
 | C6 | C0603C220J5RACTU | 22pF |
-| IC1 | Atmega8515L-8AU ||
-| IC3 | FT232RL ||
+| Atmega8515 | Atmega8515L-8AU ||
+| FT232RL | FT232RL ||
 | J1 | E10103594-0001LF | Micro USB Receptacle |
 | J2 | Buy from Aliexpress | Cartridge Reader |
 | LED1 | LSM0603453V | Green 0603 LED |
@@ -36,3 +36,15 @@ A clone [J.Rodrigo's flasher](https://www.tindie.com/products/JRodrigo/cart-flas
 | R4 | ERJ-PB3D1001V | 1K |
 | R5 | NTR06B1002DTRF | 10K |
 | XTAL1 | ECS-60-32-5PXDN-TR | 6MHz 0603 Crystal |
+
+**1.1 Changelog:**
+
+- Added indicators for the chips and header to make the pcb easier to assemble
+
+- Added indicator for LED positioning
+
+- Reduced pcb height by 0.3mm
+
+- Fixed positioning of cartridge reader guide holes
+
+- Renamed IC1 and IC3 to make more sense

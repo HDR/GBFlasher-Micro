@@ -1,7 +1,7 @@
 # The worlds smallest Game Boy cart flasher!
 A clone of [J.Rodrigo's flasher](https://www.tindie.com/products/JRodrigo/cart-flasher-for-gameboy/)
 
-[Purchase on OSHPARK](https://oshpark.com/shared_projects/ebaDN5Ku)
+[Purchase on OSHPARK](https://oshpark.com/shared_projects/Ncaqt011)
 
 
 ## Images
@@ -35,7 +35,7 @@ A clone of [J.Rodrigo's flasher](https://www.tindie.com/products/JRodrigo/cart-f
 | R3 | ERJ-PB3D1001V | 1K |
 | R4 | ERJ-PB3D1001V | 1K |
 | R5 | NTR06B1002DTRF | 10K |
-| XTAL1 | ECS-60-32-5PXDN-TR | 6MHz 0603 Crystal |
+| XTAL1 | FQ1045A-6.000 | 6MHz Crystal |
 
 **1.1 Changelog:**
 
@@ -48,3 +48,13 @@ A clone of [J.Rodrigo's flasher](https://www.tindie.com/products/JRodrigo/cart-f
 - Fixed positioning of cartridge reader guide holes
 
 - Renamed IC1 and IC3 to make more sense
+
+**1.2 Changelog:**
+
+- Reduced pcb height by 1.4mm
+
+- Relocated components to fit within the new size
+
+- Modified the cart reader footprint
+
+- Replaced the crystal (ECS-60-32-5PXDN-TR) with FQ1045A-6.000 to as this component is only 1.7mm tall instead of 4.3mm

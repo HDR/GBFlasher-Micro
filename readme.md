@@ -11,6 +11,22 @@ A clone of [J.Rodrigo's flasher](https://www.tindie.com/products/JRodrigo/cart-f
 
 ![Back](back.png)
 
+**Flashing the firmware**
+
+Flashing is done over isp, i use a Raspberry pi for this, see https://github.com/MrHDR/RaspberryPi_ISP for more info
+
+Raspberry Pi:
+```
+sudo avrdude -p atmega8515 -C ~/avrdude_gpio.conf -c pi_1 -U lfuse:w:0x1f:m -U hfuse:w:0xc9:m -B 6
+sudo avrdude -p atmega8515 -C ~/avrdude_gpio.conf -c pi_1 -U flash:w:gbcf-2.1.hex -B 6
+```
+
+USBISP 
+```
+avrdude -c USBasp -p atmega8515 -U lfuse:w:0x1f:m -U hfuse:w:0xc9:m -B 6
+avrdude -c USBasp -p atmega8515 -U flash:w:gbcf-2.1.hex -B 6
+```
+
 **BOM**
 
 | Reference        | Part Number           | Description  |

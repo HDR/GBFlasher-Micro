@@ -1,7 +1,7 @@
 # The worlds smallest Game Boy cart flasher!
 A clone of [J.Rodrigo's flasher](https://www.tindie.com/products/JRodrigo/cart-flasher-for-gameboy/)
 
-[Purchase on OSHPARK](https://oshpark.com/shared_projects/Ncaqt011)
+[Purchase on OSHPARK](https://oshpark.com/shared_projects/c9gap1j2)
 
 
 ## Images
@@ -74,3 +74,7 @@ avrdude -c USBasp -p atmega8515 -U flash:w:gbcf-2.1.hex -B 6
 - Modified the cart reader footprint
 
 - Replaced the crystal (ECS-60-32-5PXDN-TR) with FQ1045A-6.000 to as this component is only 1.7mm tall instead of 4.3mm
+
+**1.3 Changelog:**
+
+- Fixed incorrect crystal footprint

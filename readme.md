@@ -1,7 +1,7 @@
 # The worlds smallest Game Boy cart flasher!
 A clone of [J.Rodrigo's flasher](https://www.tindie.com/products/JRodrigo/cart-flasher-for-gameboy/)
 
-[Purchase on OSHPARK](https://oshpark.com/shared_projects/c9gap1j2)
+[Purchase on OSHPARK](https://oshpark.com/shared_projects/0C5yyQZD)
 
 
 ## Images

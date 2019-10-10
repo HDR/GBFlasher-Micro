@@ -39,7 +39,7 @@ avrdude -c USBasp -p atmega8515 -U flash:w:gbcf-2.1.hex -B 6
 | C6 | C0603C220J5RACTU | 22pF |
 | Atmega8515 | Atmega8515L-8AU ||
 | FT232RL | FT232RL ||
-| J1 | E10103594-0001LF | Micro USB Receptacle |
+| J1 | 10103594-0001LF | Micro USB Receptacle |
 | J2 | Buy from Aliexpress | Cartridge Reader |
 | LED1 | LSM0603453V | Green 0603 LED |
 | LED2 | LSM0603463V | Blue 0603 LED |

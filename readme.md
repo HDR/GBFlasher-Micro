@@ -3,29 +3,31 @@ A clone of [J.Rodrigo's flasher](https://www.tindie.com/products/JRodrigo/cart-f
 
 [Purchase on OSHPARK](https://oshpark.com/shared_projects/0C5yyQZD)
 
-
-## Images
-
-![Front](front.png)
-
-
-![Back](back.png)
-
-**Flashing the firmware**
+**Flashing the bootloader**
 
 Flashing is done over isp, i use a Raspberry pi for this, see https://github.com/MrHDR/RaspberryPi_ISP for more info
 
 Raspberry Pi:
 ```
-sudo avrdude -p atmega8515 -C ~/avrdude_gpio.conf -c pi_1 -U lfuse:w:0x1f:m -U hfuse:w:0xc9:m -B 6
-sudo avrdude -p atmega8515 -C ~/avrdude_gpio.conf -c pi_1 -U flash:w:gbcf-2.1.hex -B 6
+sudo avrdude -p atmega8515 -C ~/avrdude_gpio.conf -c pi_1 -U lfuse:w:0x2f:m -U hfuse:w:0xda:m -B 6
+sudo avrdude -p atmega8515 -C ~/avrdude_gpio.conf -c pi_1 -U flash:w:GBFlasher-Bootloader.hex -B 6
 ```
 
 USBISP 
 ```
-avrdude -c USBasp -p atmega8515 -U lfuse:w:0x1f:m -U hfuse:w:0xc9:m -B 6
-avrdude -c USBasp -p atmega8515 -U flash:w:gbcf-2.1.hex -B 6
+avrdude -c USBasp -p atmega8515 -U lfuse:w:0x2f:m -U hfuse:w:0xda:m -B 6
+avrdude -c USBasp -p atmega8515 -U flash:w:GBFlasher-Bootloader.hex -B 6
 ```
+
+**Flashing the firmware**
+
+Flashing the firmware can be done over USB using [tinysafeboot](https://github.com/seedrobotics/tinysafeboot/)
+
+- Download and extract [tsbloader_adv](https://github.com/seedrobotics/tinysafeboot/raw/master/software/tsbloader_advanced/binaries/tsbloader_adv_1.0.8.zip)
+
+- Download the [firmware](https://github.com/HDR/GBFlasher-Firmware/releases/latest/download/GBFlasher-Firmware.hex) and put it in the folder with the files you just extracted
+
+- Open command line and flash the firmware by writing "tsbloader_adv -port=com# -fop=wv -ffile=GBFlasher-Firmware.hex" (Replace # with whatever com port number the flasher shows up as in Device Manager)
 
 **BOM**
 
@@ -52,6 +54,13 @@ avrdude -c USBasp -p atmega8515 -U flash:w:gbcf-2.1.hex -B 6
 | R4 | ERJ-PB3D1001V | 1K |
 | R5 | NTR06B1002DTRF | 10K |
 | XTAL1 | FQ1045A-6.000 | 6MHz Crystal |
+
+## Images
+
+![Front](front.png)
+
+
+![Back](back.png)
 
 **1.1 Changelog:**
 

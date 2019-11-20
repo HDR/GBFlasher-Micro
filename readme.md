@@ -87,3 +87,7 @@ Flashing the firmware can be done over USB using [tinysafeboot](https://github.c
 **1.3 Changelog:**
 
 - Fixed incorrect crystal footprint
+
+**1.4 Changelog:**
+
+Fixed incorrect crystal wiring

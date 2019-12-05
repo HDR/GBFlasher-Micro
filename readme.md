@@ -1,6 +1,6 @@
 # The worlds smallest Game Boy cart flasher!
 
-[Purchase on OSHPARK](https://oshpark.com/shared_projects/PaC5MU5U)
+[Purchase on OSHPARK](https://oshpark.com/shared_projects/s4mcazAO)
 
 [Purchase the tool for flashing the boards on OSHPARK](https://oshpark.com/shared_projects/OUjmrtRg)
 

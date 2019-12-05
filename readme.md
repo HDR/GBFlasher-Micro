@@ -1,7 +1,8 @@
 # The worlds smallest Game Boy cart flasher!
-A clone of [J.Rodrigo's flasher](https://www.tindie.com/products/JRodrigo/cart-flasher-for-gameboy/)
 
-[Purchase on OSHPARK](https://oshpark.com/shared_projects/0C5yyQZD)
+[Purchase on OSHPARK](https://oshpark.com/shared_projects/PaC5MU5U)
+
+[Purchase the tool for flashing the boards on OSHPARK](https://oshpark.com/shared_projects/OUjmrtRg)
 
 **Flashing the bootloader**
 
@@ -29,32 +30,26 @@ Flashing the firmware can be done over USB using [tinysafeboot](https://github.c
 
 - Open command line and flash the firmware by writing "tsbloader_adv -port=com# -fop=wv -ffile=GBFlasher-Firmware.hex" (Replace # with whatever com port number the flasher shows up as in Device Manager)
 
-**BOM**
+**BOM** (Most of these can be found on LCSC)
 
 | Reference        | Part Number           | Description  |
 | ------------- |:-------------:| -----:|
-| C1 | 0603ZD104KAT2A | 0.1uF |
-| C2 | 0603ZD104KAT2A | 0.1uF |
-| C3 | NMC0603X5R106M10 | 10uF |
-| C4 | 0603ZD104KAT2A | 0.1uF |
-| C5 | C0603C220J5RACTU | 22pF |
-| C6 | C0603C220J5RACTU | 22pF |
-| Atmega8515 | Atmega8515L-8AU ||
-| FT232RL | FT232RL ||
-| J1 | 10103594-0001LF | Micro USB Receptacle |
-| J2 | Buy from Aliexpress | Cartridge Reader |
-| LED1 | LSM0603453V | Green 0603 LED |
-| LED2 | LSM0603463V | Blue 0603 LED |
-| LED3 | LSM0603463V | Blue 0603 LED |
-| LED4 | LSM0603412V | Red 0603 LED |
-| PTC1 | MF-FSMF050X-2 | 500mA PTC Fuse |
-| R1 | ERJ-PB3D1001V | 1K |
-| R2 | ERJ-PB3D1001V | 1K |
-| R3 | ERJ-PB3D1001V | 1K |
-| R4 | ERJ-PB3D1001V | 1K |
-| R5 | NTR06B1002DTRF | 10K |
-| XTAL1 | FQ1045A-6.000 | 6MHz Crystal |
-
+| C1 | 0603F104M500NT | 100nF |
+| C2 | CL10A106MQ8NNND | 10uF |
+| C3 | 0603F104M500NT | 100nF |
+| Atmega8515 | Atmega8515L-8AU | Atmega8515L-8AU is not compatible|
+| FT232RL | FT232RL | Buy from Aliexpress |
+| J0 | Buy from Aliexpress | Cartridge Reader |
+| J1 | Type-C-31-M-12 | USB Type C Receptacle |
+| PWR | Everlight Elec 19-217/GHC-YR1S2/3T | Green 0603 LED |
+| R/W | Everlight Elec 19-217/R6C-AL1M2VY/3T | Red 0603 LED |
+| F1 | MF-FSMF050X-2 | 500mA PTC Fuse |
+| R1 | CR0603JA0102G | 1K |
+| R2 | CR0603JA0102G | 1K |
+| R3 | 0603WAJ0103T5E | 10K |
+| R4 | 0603WAJ0512T5E | 5.1K (Only required for USB C to USB C cables) |
+| R5 | 0603WAJ0512T5E | 5.1K (Only required for USB C to USB C cables) |
+| X1 | S3D6.000000B20F30T | 6MHz Crystal |
 ## Images
 
 ![Front](front.png)
@@ -90,4 +85,24 @@ Flashing the firmware can be done over USB using [tinysafeboot](https://github.c
 
 **1.4 Changelog:**
 
-Fixed incorrect crystal wiring
+- Fixed incorrect crystal wiring
+
+**1.5 Changelog:**
+
+- Replaced the micro usb port with a USB Type C port
+
+- Removed the ISP header in favor of flashing using the cart bus https://oshpark.com/shared_projects/OUjmrtRg
+
+- Replaced the crystal with one that is smaller and does not require 2 capacitors
+
+- Removed redundant capacitors
+
+- Removed the leds for TXD and RXD and their resistors
+
+- Reduced board width by 0.3mm
+
+- Reduced board height by 1.8mm
+
+- Reduced board layers from 4 to 2, this cuts the price in half
+
+- Reduced the size of the cart reader footprint, this now requires some trimming of the pins to fit

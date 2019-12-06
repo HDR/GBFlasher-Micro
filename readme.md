@@ -37,7 +37,7 @@ Flashing the firmware can be done over USB using [tinysafeboot](https://github.c
 | C1 | 0603F104M500NT | 100nF |
 | C2 | CL10A106MQ8NNND | 10uF |
 | C3 | 0603F104M500NT | 100nF |
-| Atmega8515 | Atmega8515L-8AU | Atmega8515L-8AU is not compatible|
+| Atmega8515 | Atmega8515L-8AU | Atmega8515L-8MU is not compatible|
 | FT232RL | FT232RL | Buy from Aliexpress |
 | J0 | Buy from Aliexpress | Cartridge Reader |
 | J1 | Type-C-31-M-12 | USB Type C Receptacle |

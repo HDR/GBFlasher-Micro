@@ -6,7 +6,7 @@
 
 **Flashing the bootloader**
 
-Flashing is done over isp, i use a Raspberry pi for this, see https://github.com/MrHDR/RaspberryPi_ISP for more info
+Flashing is done over isp, i use a Raspberry pi for this, see https://github.com/HDR/RaspberryPi_ISP for more info
 
 Raspberry Pi:
 ```
